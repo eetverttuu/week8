@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DA9C8B"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a simple calculator for simple people"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="260dp"
+            android:background="#EA663C"
+            android:onClick="minusNumbers"
+            android:text="-"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toEndOf="@+id/btnPlus"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#DC1919" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="#B8B8B1"
+            android:onClick="divideNumbers"
+            android:text="/"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toEndOf="@+id/btnMultiple"
+            app:layout_constraintTop_toBottomOf="@+id/btnMinus"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <Button
+            android:id="@+id/btnMultiple"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="100dp"
+            android:background="#EA663C"
+            android:onClick="multipleNumbers"
+            android:text="x"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPlus"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="260dp"
+            android:background="#B8B8B1"
+            android:onClick="sumNumbers"
+            android:text="+"
+            android:textSize="60sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/resultOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMultiple"
+            app:layout_constraintVertical_bias="0.337" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/inputNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Number 1"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <EditText
+        android:id="@+id/inputNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Number 2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNumber1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
