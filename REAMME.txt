@@ -1,0 +1,2 @@
+Tein viikkotehtävän 5 pisteen arvoisena. Nelilaskin osaa seuraavat laskutoimituksen: summa-, vähennys-, kerto- ja jakolaskun.
+Laskimeen on lisätty ominaisuus, joss 0 ei voi jakaa. Jakolasku pyöristetään kahden desimaalin tarkkuudella. 
